@@ -1,0 +1,43 @@
+.multiLoggedSection {
+  //sprzalka wroc
+  img {
+    width: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    display: flex;
+    .myData,
+    .futureVisits,
+    .pastVisits {
+      margin: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $darkBlue;
+    }
+    .myData {
+      h2 {
+        margin-bottom: 0;
+        line-height: 60%;
+        margin-top: 0.5rem;
+      }
+      .edit {
+        cursor: pointer;
+        margin-bottom: 0.6rem;
+      }
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        &:hover {
+          color: $darkBlue;
+        }
+      }
+    }
+  }
+}

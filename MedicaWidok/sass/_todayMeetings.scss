@@ -1,0 +1,29 @@
+body {
+  .todayMeetingsSection {
+    ul {
+      .top {
+        background-color: $lightBlue;
+        color: white;
+        margin-bottom: 0;
+      }
+      li {
+        
+        p:nth-child(1) {
+          flex: 1;
+        }
+        p:nth-child(2) {
+          flex: 2;
+          span {
+            cursor: pointer;
+          }
+        }
+        p:nth-child(3) {
+          flex: 2;
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

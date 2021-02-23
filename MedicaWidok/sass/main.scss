@@ -1,0 +1,23 @@
+@import "reset";
+@import "var";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #cee2db;
+}
+
+//global
+@import "nav";
+@import "global";
+
+//local
+@import "landing";
+@import "about";
+@import "doctors";
+@import "plain";
+@import "plain5";
+@import "logged";
+@import "doctorsList";
+@import "prices";
+@import "todayMeetings";
+@import 'loggedMyData'

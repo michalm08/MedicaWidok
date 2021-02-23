@@ -1,0 +1,421 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #cee2db;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(233, 232, 242, 0.796);
+  -webkit-box-shadow: 0px 5px 5px rgba(127, 153, 188, 0.412);
+          box-shadow: 0px 5px 5px rgba(127, 153, 188, 0.412);
+  color: #154A76;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav h1 {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #154A76;
+}
+
+nav ul li .nav_elem {
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav ul li .nav_elem:hover {
+  border-bottom: 2px solid #0288A3;
+}
+
+nav ul li .nav_plain {
+  background-color: #91D3CE;
+  color: #EAE9F3;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav ul li .nav_plain:hover {
+  border: 2px solid #91D3CE;
+  background-color: #EAE9F3;
+  color: #154A76;
+}
+
+nav ul .login {
+  border-left: 1px solid #98ADCA;
+}
+
+.gHero-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/Dental_office.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.gPopupParent {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gPopupParent .gPopup, .gPopupParent .gPopupWide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+          box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+}
+
+.gPopupParent .gPopupWide {
+  width: 70vw;
+}
+
+h1 {
+  color: #154A76;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btnSmall {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border: 2px solid #154A76;
+  border-radius: 2rem;
+  color: white;
+  background-color: #98ADCA;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #98ADCA;
+  font-size: 1rem;
+  color: #282828;
+  background-color: inherit;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #154A76;
+}
+
+.MarginTop {
+  margin-top: 1.5rem;
+}
+
+.MarginBottom {
+  margin-bottom: 1.5rem;
+}
+
+.myList {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+.myList li {
+  list-style-type: none;
+  background-color: #EAE9F3;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  color: #282828;
+  cursor: pointer;
+}
+
+.myList li:hover {
+  -webkit-box-shadow: 0 0 4px rgba(127, 153, 188, 0.412);
+          box-shadow: 0 0 4px rgba(127, 153, 188, 0.412);
+}
+
+.landingSection .sharpHero-image {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.landingSection .btnBig, .landingSection .btnBig1, .landingSection .btnBig2 {
+  display: inline-block;
+  width: 18rem;
+  padding: 0.7rem 2rem;
+  border: 2px solid #154A76;
+  border-radius: 2rem;
+  color: #EAE9F3;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.landingSection .btnBig:hover, .landingSection .btnBig1:hover, .landingSection .btnBig2:hover {
+  background-color: #98ADCA;
+}
+
+.landingSection .btnBig1 {
+  background-color: rgba(151, 172, 201, 0.85);
+}
+
+.landingSection .btnBig2 {
+  background-color: #91D3CE;
+}
+
+body .aboutSection {
+  margin: 8rem 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+          box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+  background-color: white;
+}
+
+body .aboutSection .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+body .aboutSection .contact .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.doctorsSection ul {
+  margin: 8rem 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+          box-shadow: 0px 0px 10px rgba(127, 153, 188, 0.412);
+  background-color: white;
+}
+
+.doctorsSection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  border-bottom: 2px solid #d8d8d8;
+  margin: 2rem;
+  padding-bottom: 3rem;
+}
+
+.doctorsSection ul li img {
+  width: 12rem;
+}
+
+.doctorsSection ul li h3 {
+  margin: 5rem 10rem;
+}
+
+.plain5Section .elems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+}
+
+.plain5Section .elems .elem2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 1px dotted #98ADCA;
+  margin: 0 0.5rem;
+}
+
+.multiLoggedSection img {
+  width: 16px;
+  margin-bottom: 1rem;
+}
+
+.multiLoggedSection .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.multiLoggedSection .content .myData,
+.multiLoggedSection .content .futureVisits,
+.multiLoggedSection .content .pastVisits {
+  margin: 2rem;
+}
+
+.multiLoggedSection .content h2 {
+  margin-bottom: 1rem;
+  color: #154A76;
+}
+
+.multiLoggedSection .content .myData h2 {
+  margin-bottom: 0;
+  line-height: 60%;
+  margin-top: 0.5rem;
+}
+
+.multiLoggedSection .content .myData .edit {
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+}
+
+.multiLoggedSection .content ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.multiLoggedSection .content ul li:hover {
+  color: #154A76;
+}
+
+.doctorListSection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: auto;
+}
+
+.doctorListSection ul li .btn {
+  cursor: pointer;
+}
+
+.pricesSection ul li:nth-child(even) {
+  background-color: #EAE9F3;
+}
+
+.pricesSection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.45rem 0.2rem;
+}
+
+.pricesSection ul li input {
+  width: 3rem;
+  text-align: center;
+}
+
+.pricesSection ul li input::-webkit-outer-spin-button,
+.pricesSection ul li input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pricesSection ul li input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body .todayMeetingsSection ul .top {
+  background-color: #91D3CE;
+  color: white;
+  margin-bottom: 0;
+}
+
+body .todayMeetingsSection ul li p:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .todayMeetingsSection ul li p:nth-child(2) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body .todayMeetingsSection ul li p:nth-child(2) span {
+  cursor: pointer;
+}
+
+body .todayMeetingsSection ul li p:nth-child(3) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body .todayMeetingsSection ul li p:nth-child(3) span {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
